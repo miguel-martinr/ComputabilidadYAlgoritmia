@@ -1,0 +1,17 @@
+WHILE
+SIG (
+PAL x
+OP <
+INT 5
+SIG )
+SIG {
+SIG }
+SIG {
+PAL hola
+PAL mundo
+PAL cruel
+IF
+PAL Computabilidad
+PAL Algoritmia
+FLOT 3.1416
+SIG }

@@ -1,0 +1,12 @@
+INSTRUCCIONES:
+
+                  ~$./parser_main entrada.txt salida.txt 
+
+  entrada.txt : fichero de entrada con el texto a analizar. Todos los lexemas
+                deben estar separados entre si por espacios en blanco o saltos
+                de línea.
+
+  salida.txt : fichero de salida donde se imprimirán los resultados obtenidos 
+               del análisis léxico de entrada.txt .
+               
+               
