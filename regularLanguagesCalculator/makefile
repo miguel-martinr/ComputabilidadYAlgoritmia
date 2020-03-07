@@ -1,18 +1,16 @@
-calc: lenguaje.o calculadora.o mainl.o
-	g++ -o mainl lenguaje.o calculadora.o mainl.o
+bin/regLangCalc: bin/lenguaje.o bin/calculadora.o src/main.cpp
+	g++ -g -o bin/regLangCal bin/lenguaje.o bin/calculadora.o src/main.cpp
 
-lenguaje.o: lenguaje.h lenguaje.cpp
-	g++ -c lenguaje.cpp
+bin/lenguaje.o: include/lenguaje.h src/lenguaje.cpp
+	g++ -g -c -o bin/lenguaje.o src/lenguaje.cpp
 
-calculadora.o: calculadora.h calculadora.cpp
-	g++ -c calculadora.cpp
+bin/calculadora.o: include/calculadora.h src/calculadora.cpp
+	g++ -g -c -o bin/calculadora.o src/calculadora.cpp
 
-mainl.o: mainl.cpp
-	g++ -c mainl.cpp
 	
 	
 .PHONY: clean
 clean:
-	rm -rf *.o
+	rm -rf bin/*.o
 
 	
