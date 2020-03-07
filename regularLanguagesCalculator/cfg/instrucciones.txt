@@ -1,0 +1,36 @@
+INSTRUCCIONES:
+        ~$ ./mainl entrada.txt salida.txt code
+    
+    entrada.txt : fichero con los lenguajes debidamente formateados. Encerrados
+                  entre {} y con sus cadenas separadas por comas.
+    Notas: 
+     *Caracteres no permitidos como cadenas comunes: {, }, ., &
+     *Lenguaje vacío: {}
+     *Cadena vacía: &
+     *Ejemplo de lenguaje formateado. {abc, def, 123}
+     
+     salida.txt : fichero donde se imprimirán los resultados de las operaciones.
+     
+     code : codigo de operación.
+         1. Concatenación 
+         2. Unión 
+         3. Intersección
+         4. Diferencia
+         5. Sublenguajes
+         6. Igualdad de lenguajes
+         7. Inversa
+        *8. Potencia
+         9. Cierre positivo
+         10. Cierre de Kleene
+         
+    *8: Para indicar el número de la potencia, añadirlo como último argumento.
+    Si el código es 8 y no se especifica la potencia, esta tomará valor 1 por
+    defecto.
+    Ejemplo:
+         ~$./mainl entrada.txt salida.txt 8 2
+         
+    Para más información véase: 
+    https://campusvirtual.ull.es/1920/pluginfile.php/159482/mod_assign/introattachment/0/CYA_1920_Practica_3.pdf?forcedownload=0
+    
+    
+    
